@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".activity.LoginActivity">
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:id="@+id/form_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:maxLines="1"
+            android:id="@+id/email_edit_text"
+            android:layout_margin="5dp"
+            android:inputType="textEmailAddress"
+            android:textAlignment="center"
+            android:hint="email"
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/error_email_text"
+            android:text="Maaf, Email anda tidak valid!"
+            android:textAlignment="center"
+            android:textColor="@color/Red"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:maxLines="1"
+            android:hint="password"
+            android:textAlignment="center"
+            android:inputType="textPassword"
+            android:id="@+id/password_edit_text"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/error_password_text"
+            android:text="Maaf, Password anda tidak valid!"
+            android:textAlignment="center"
+            android:textColor="@color/Red"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/login_button"
+            android:text="Login"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/register_text"
+            android:textStyle="bold"
+            android:textAlignment="textEnd"
+            android:text="Belum punya akun? Register!"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>

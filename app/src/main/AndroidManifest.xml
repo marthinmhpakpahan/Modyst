@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="ual.modyst">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,7 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".MainActivity"
+            android:name=".activity.MainActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -18,6 +20,43 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".activity.LoginActivity" />
+        <activity android:name=".activity.RegisterActivity" />
+        <activity android:name=".activity.CreateItemActivity" />
+        <activity android:name=".activity.ViewItemActivity" />
+        <activity android:name=".activity.UpdateItemActivity" />
+        <activity android:name=".activity.CreateSizeActivity" />
+        <activity android:name=".activity.ViewSizeActivity" />
+        <activity android:name=".activity.UpdateSizeActivity" />
+        <activity android:name=".activity.CreateColorActivity" />
+        <activity android:name=".activity.UpdateColorActivity" />
+        <activity android:name=".activity.ViewColorActivity" />
+        <activity android:name=".activity.ViewUserActivity" />
+        <activity android:name=".activity.UpdateUserActivity" />
+        <activity
+            android:name=".activity.AdminDashboardActivity"
+            android:label="@string/title_activity_admin_dashboard"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.UsersActivity"
+            android:label="@string/title_activity_users"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.ItemsActivity"
+            android:label="@string/title_activity_items"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.ColorsActivity"
+            android:label="@string/title_activity_colors"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.RequestsActivity"
+            android:label="@string/title_activity_requests"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.SizesActivity"
+            android:label="@string/title_activity_sizes"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
